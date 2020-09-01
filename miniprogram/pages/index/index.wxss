@@ -1,0 +1,10 @@
+.Swiper swiper{
+  width: 750rpx;
+  height: 535rpx;
+}
+.Swiper swiper swiper-item navigator image {
+  width: 100%;
+}
+.floor-first{
+  margin: 10rpx 0 ;
+}

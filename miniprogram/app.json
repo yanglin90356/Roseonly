@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/cart/cart",
+    "pages/home/home",
+    "pages/ProList/ProList",
+    "pages/details/details",
+    "pages/searchItem/searchItem"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "ROSEONLY商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#696969",
+    "selectedColor": "#c71f2c",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home-o.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "商品分类",
+        "iconPath": "./images/classify.png",
+        "selectedIconPath": "./images/classify-o.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "./images/cart.png",
+        "selectedIconPath": "./images/cart-o.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "./images/my.png",
+        "selectedIconPath": "./images/my-o.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,8 @@
+<view class="search">
+  <navigator url="/pages/searchItem/searchItem" open-type="navigate">
+    <view>
+      <icon class="icon-small" type="search" size="20"></icon>
+    </view>
+    <view>搜索</view>
+  </navigator>
+</view>

@@ -1,0 +1,74 @@
+<view class="details">
+  <!-- 轮播图 -->
+  <view class="swiper">
+    <swiper autoplay indicator-dots indicator-active-color="#c71f2c" circular>
+      <swiper-item bindtap="handlePrevewImg" data-index="{{index}}" wx:for="{{banner}}" wx:key="index">
+        <image mode="widthFix" src="{{item}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 商品信息 -->
+  <view class="Blurb">
+    <view class="deta-price">￥{{price}}</view>
+    <view class="deta-ShareAndTitle">
+      <view class="title">{{title}}</view>
+      <view class="share">
+        <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/icons/分享.png"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 商家承诺 -->
+  <view class="TheyPromise">
+    <view class="first">
+      <view>商家认证·交易保障·优先赔付·优先赔付</view>
+      <view class="sjrz">
+        <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/icons/右箭头.png"></image>
+      </view>
+    </view>
+    <view class="carriage">
+      <text>运费</text>
+      <text>免运费</text>
+    </view>
+    <view class="service">
+      <view class="service-item">
+        <text>服务</text>
+        <text>收货后结算 · 快递发货</text>
+      </view>
+      <view class="service-img">
+        <image src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/icons/右箭头.png"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 详情页 -->
+  <view class="DetailsFigure">
+    <view>商品详情</view>
+    <view>
+      <image mode="widthFix" wx:for="{{xqImg}}" wx:key="index" src="{{item}}">
+      </image>
+    </view>
+  </view>
+  <!-- 底部工具栏 -->
+  <view class="btm_tool">
+    <view class="tool_item">
+      <view class="left-icons">
+        <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/icons/客服.png"></image>
+      </view>
+      <view>客服</view>
+      <button open-type="contact"></button>
+    </view>
+    <navigator class="tool_item" open-type="switchTab" url="/pages/index/index">
+      <view class="left-icons">
+        <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/icons/_店铺.png"></image>
+      </view>
+      <view>店铺</view>
+    </navigator>
+    <navigator class="tool_item" open-type="switchTab" url="/pages/cart/cart">
+      <view class="left-icons">
+        <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/icons/cart.png"></image>
+      </view>
+      <view>购物车</view>
+    </navigator>
+    <view class="btn_cart" bindtap="addCart">加入购物车</view>
+    <view class="btn_buy">立即购买</view>
+  </view>
+</view>

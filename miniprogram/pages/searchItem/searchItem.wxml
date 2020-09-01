@@ -1,0 +1,34 @@
+<view class="search_row">
+  <input type="text" placeholder="星座" bindinput="handleInput" />
+  <navigator url="/pages/classify/classify" open-type="reLaunch">取 消</navigator>
+</view>
+
+<!-- 热门搜索 -->
+<block wx:if="{{searchCentent.length===0}}">
+  <view class="hotSearch">
+    <view class="centent">
+      <view class="text_1">热门搜索</view>
+      <view class="text_2">星座</view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="searchGodds">
+    <view wx:for="{{searchCentent}}" wx:key="index">
+      <navigator class="info" url="/pages/details/details?id={{item._id}}">
+        <view class="left">
+          <image mode="widthFix" src="{{item.img_xl}}"></image>
+        </view>
+        <view class="right">
+          <view>{{item.title}}</view>
+          <view class="search-foot">
+            <view class="search-price">￥{{item.price}}</view>
+            <view class="search-cart">
+              <image mode="widthFix" src="../../images/addcart.png"></image>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</block>

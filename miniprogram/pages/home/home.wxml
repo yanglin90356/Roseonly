@@ -1,0 +1,51 @@
+<view class="user_info_wrap">
+  <view class="user_img_wrap">
+    <image mode="widthFix" class="user_bg"
+      src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/icons/grzx.png"></image>
+    <view class="user_info">
+      <image class="user_icon" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/icons/tx.png"></image>
+      <!-- <image class="user_icon" src="{{userInfo.avatarUrl}}"></image> -->
+      <button class="user_name" open-type="getUserInfo" bindgetuserinfo="getuser">点击显示微信头像</button>
+      <!-- <view>{{userInfo.nickName}}</view> -->
+    </view>
+  </view>
+</view>
+<view class="container">
+  <view class="PropertyCenter">
+    <view class="item" wx:for="{{item1}}" wx:key="index">
+      <view>{{item.hed}}</view>
+      <view>{{item.name}}</view>
+    </view>
+  </view>
+  <view class="orderCenter">
+    <view class="myOrder">
+      <view class="first">我的订单</view>
+      <view class="to">
+        <view>查看全部订单</view>
+        <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/icons/右箭头.png"></image>
+      </view>
+    </view>
+    <view class="orderStatus">
+      <view class="status" wx:for="{{orderStarus}}" wx:key="index">
+        <view class="img_url">
+          <image mode="widthFix" src="{{item.path}}"></image>
+        </view>
+        <view>{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 三楼 -->
+  <view class="Contac">
+    <view class="TaskCenter" wx:for="{{threeLayers}}" wx:key="index">
+      <view class="TaskLeft">
+        <view>
+          <image class="titileIMG" mode="widthFix" src="{{item.url}}"></image>
+        </view>
+        <view class="TaskName">{{item.text}}</view>
+      </view>
+      <view>
+        <image mode="widthFix" class="enterinto" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/icons/右箭头.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

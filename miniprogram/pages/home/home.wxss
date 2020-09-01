@@ -1,0 +1,137 @@
+page {
+  background-color: #f9f9f9;
+}
+
+.user_img_wrap {
+  position: relative;
+}
+
+.user_info {
+  position: absolute;
+  left: 40%;
+  transform: translate(-50%);
+  top: 30%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_icon {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.user_name {
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+  padding: 20rpx;
+}
+
+.PropertyCenter {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  text-align: center;
+}
+
+.item view:first-child {
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.item view:last-child {
+  font-size: 22rpx;
+  color: #aaa;
+}
+
+.orderCenter {
+  background-color: #fff;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+}
+
+.orderCenter .myOrder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 1px solid #fafaf8;
+}
+.myOrder image{
+  width: 26rpx;
+  height: 26rpx;
+}
+.myOrder .first{
+  color: #444444;
+  font-size: 26rpx;
+  font-weight: 600;
+}
+.myOrder .to{
+  font-size: 22rpx;
+  color: #aaa;
+  display: flex;
+}
+.myOrder .to view{
+  margin-right: 16rpx;
+}
+.orderStatus{
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.orderStatus .img_url{
+  height: 40rpx;
+  margin-bottom: 30rpx;
+  width: 100%;
+}
+.orderStatus .img_url image{
+  width: 40rpx;
+  height: 100%;
+}
+.status{
+  font-size: 22rpx;
+  color: #444444;
+  text-align: center;
+}
+.Contac{
+  margin-top: 20rpx;
+  /* padding: 20rpx; */
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.TaskCenter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fafaf8;
+  padding: 20rpx;
+}
+.TaskCenter .titileIMG{
+  width: 40rpx;
+  height: 40rpx;
+}
+.TaskLeft{
+  display: flex;
+  font-size: 22rpx;
+  justify-content: center;
+  align-items: center;
+}
+.TaskName{
+  margin-left: 20rpx;
+}
+.enterinto{
+  width: 30rpx;
+  height: 30rpx;
+}

@@ -1,0 +1,90 @@
+<view class="index">
+  <!-- 轮播图开始 -->
+  <view class="Swiper">
+    <swiper autoplay indicator-dots indicator-active-color="#c71f2c" circular>
+      <swiper-item wx:for="{{banner}}" wx:key="index">
+        <navigator url="/pages/ProList/ProList">
+          <image mode="widthFix" src="{{item}}"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 轮播图开始 -->
+  <!-- 楼层一开始 -->
+  <view class="floor-first">
+    <navigator url="/pages/ProList/ProList">
+      <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/love.gif"></image>
+    </navigator>
+  </view>
+  <!-- 楼层一结束 -->
+  <!-- 楼层二开始 -->
+  <view>
+    <view>
+      <navigator url="/pages/details/details?id=8">
+        <image src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/Flowersrose.jpg"></image>
+      </navigator>
+    </view>
+    <view>
+      <navigator wx:for="{{floor2}}" wx:key="index" url="/pages/details/details?id={{item.id}}">
+        <image mode="widthFix" src="{{item.path}}"></image>
+      </navigator>
+    </view>
+  </view>
+  <!-- 楼层二结束 -->
+  <!-- 楼层三开始 -->
+  <view>
+    <view>
+      <navigator url="/pages/ProList/ProList">
+        <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/dyrtk.jpg"></image>
+      </navigator>
+    </view>
+    <view>
+      <navigator url="/pages/ProList/ProList">
+        <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/floor3/rmtj.jpg">
+        </image>
+      </navigator>
+      <navigator url="/pages/ProList/ProList">
+        <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/floor3/yymg.jpg">
+        </image>
+      </navigator>
+    </view>
+  </view>
+  <!-- 楼层三结束 -->
+  <!-- 楼层四开始 -->
+    <view>
+      <navigator url="/pages/ProList/ProList">
+        <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/floor3/mgzb.jpg"></image>
+      </navigator>
+    </view>
+  <!-- 楼层四结束 -->
+  <view>
+    <navigator url="/pages/ProList/ProList">
+      <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/floor3/mggz.jpg"></image>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/ProList/ProList">
+      <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/xzjd.jpg"></image>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/ProList/ProList">
+      <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/15941971667816517.jpg"></image>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/ProList/ProList">
+      <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/15941971667943320.gif"></image>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/ProList/ProList">
+      <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/15941971668204200.jpg"></image>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/ProList/ProList">
+      <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/15941971668306738.jpg"></image>
+    </navigator>
+  </view>
+</view>

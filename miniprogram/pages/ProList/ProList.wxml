@@ -1,0 +1,24 @@
+<view class="products">
+  <!-- 头部 -->
+  <view class="nav">
+    <view class="{{index===active?'active':''}}" wx:for="{{nav}}" wx:key="index" bindtap="NavClick"
+      data-index="{{index}}">{{item}}</view>
+  </view>
+  <!-- 商品展示 -->
+  <view class="goods">
+    <view class="goods-container" wx:for="{{ProList}}" wx:key="index">
+      <navigator url="/pages/details/details?id={{item._id}}">
+        <view class="goods-img">
+          <image mode="widthFix" src="{{item.img_xl}}"></image>
+        </view>
+        <view>{{item.title}}</view>
+      </navigator>
+      <view class="goods-foot">
+        <view class="goods-price">￥{{item.price}}</view>
+        <view class="goods-cart">
+          <image mode="widthFix" src="../../images/addcart.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,108 @@
+page {
+  background-color: #f7f8fa;
+  width: 100%;
+}
+
+.search_row {
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  font-size: 24rpx;
+  background: #fff;
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.search_row input {
+  width: 100%;
+  flex: 2;
+  height: 100%;
+  background-color: #f7f8fa;
+  border-radius: 40rpx;
+  padding-left: 30rpx;
+}
+
+.search_row navigator {
+  width: 110rpx;
+  height: 100%;
+  padding: 0;
+  margin-right: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  font-size: 26rpx;
+  color: #000000;
+}
+
+/* 热门搜索 */
+.hotSearch {
+  margin: 20rpx 0;
+  padding: 0 40rpx;
+}
+
+.hotSearch .centent {
+  background-color: #fff;
+  height: 160rpx;
+  border-radius: 10rpx;
+}
+
+.hotSearch .centent .text_1 {
+  padding: 20rpx;
+  font-size: 24rpx;
+}
+.hotSearch .centent .text_2{
+  background-color: #f7f8fa;
+  width: 80rpx;
+  padding: 10rpx;
+  margin-left: 20rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #696969;
+}
+/* 商品 */
+.searchGodds{
+  padding:10rpx 20rpx;
+  box-sizing: border-box;
+}
+.info{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.info .left{
+  flex: 2;
+}
+.info .right{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20rpx;
+  height: 260rpx;
+  font-size: 26rpx;
+}
+.search-cart{
+  width: 35rpx;
+  height: 35rpx;
+  border-radius: 50%;
+  border: 1px solid #c71f2c;
+}
+.search-cart image{
+  width: 100%;
+  height: 100%;
+}
+.search-foot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400rpx;
+}
+.search-price{
+  color: red;
+}

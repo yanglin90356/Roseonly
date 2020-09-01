@@ -1,0 +1,145 @@
+<view class="categroy">
+<!-- 搜索框 -->
+  <search></search>
+  <view class="categroy_container">
+    <view class="left-menu">
+      <view class="left-menu-item {{index===active?'active?':''}}" wx:for="{{leftMenu}}" wx:key="index"
+        id="NAV{{index}}" bindtap="leftClick" data-index="{{index}}">{{item}}</view>
+    </view>
+    <!-- 右侧内容 -->
+    <scroll-view scroll-y="true" scroll-into-view="NAV{{status}}" scroll-with-animation="true" class="right-container">
+      <!-- 第一层 -->
+      <view class="floor-first" id="NAV0">
+        <navigator url="/pages/ProList/ProList" >
+          <image mode="widthFix"
+            src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/categroy/15985195735638110.jpg"></image>
+        </navigator>
+        <view class="rigth-name">新品活动</view>
+        <view class="right-content">
+          <view class="right-pro" wx:for="{{floor1}}" wx:key="index">
+            <navigator url="/pages/ProList/ProList" >
+              <view>
+                <image mode="widthFix" src="{{item.url}}"></image>
+              </view>
+              <view>
+                <text>{{item.title}}</text>
+              </view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+      <!-- 第二层 -->
+      <view class="floor-tow" id="NAV1">
+        <navigator url="/pages/ProList/ProList" >
+          <image mode="widthFix"
+            src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/categroy/15985195735791988.jpg"></image>
+        </navigator>
+        <view class="rigth-name">爱礼推荐</view>
+        <view class="right-content">
+          <view wx:for="{{floor2}}" wx:key="index" class="right-pro">
+            <navigator url="/pages/ProList/ProList" >
+              <image mode="widthFix" src="{{item.url}}"></image>
+              <view>{{item.title}}</view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+      <!-- 第三层 -->
+      <view class="floor-three" id="NAV2">
+        <navigator url="/pages/ProList/ProList" >
+          <image mode="widthFix"
+            src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/categroy/15529893631418786.jpg"></image>
+        </navigator>
+        <view class="rigth-name">鲜花玫瑰</view>
+        <view class="right-content">
+          <view wx:for="{{floor3}}" wx:key="index" class="right-pro">
+            <navigator url="/pages/ProList/ProList" >
+              <image mode="widthFix" src="{{item.url}}"></image>
+              <view>{{item.title}}</view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+      <!-- 第四层 -->
+      <view class="floor-four" id="NAV3">
+        <navigator url="/pages/ProList/ProList" >
+          <image mode="widthFix"
+            src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/categroy/15529893631505057.jpg"></image>
+        </navigator>
+        <view class="rigth-name">永生玫瑰</view>
+        <view class="right-content">
+          <view class="right-pro" wx:for="{{floor4}}" wx:key="index">
+            <navigator url="/pages/ProList/ProList" >
+              <image mode="widthFix" src="{{item.url}}"></image>
+              <view>{{item.title}}</view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+      <!-- 第五层 -->
+      <view class="floor-five" id="NAV4">
+        <navigator url="/pages/ProList/ProList" >
+          <image mode="widthFix"
+            src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/categroy/15529893631285531.jpg"></image>
+        </navigator>
+        <view class="rigth-name">玫瑰珠宝</view>
+        <view class="right-content">
+          <view class="right-pro" wx:for="{{floor5}}" wx:key="index">
+            <navigator url="/pages/ProList/ProList" >
+              <image mode="widthFix" src="{{item.url}}"></image>
+              <view>{{item.title}}</view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+      <!-- 第六层 -->
+      <view class="floor-six" id="NAV5">
+        <navigator url="/pages/ProList/ProList" >
+          <image mode="widthFix"
+            src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/categroy/15964255644027604.jpg"></image>
+        </navigator>
+        <view class="rigth-name">玫瑰家居</view>
+        <view class="right-content">
+          <view class="right-pro" wx:for="{{floor6}}" wx:key="index">
+            <navigator url="/pages/ProList/ProList" >
+              <image mode="widthFix" src="{{item.url}}"></image>
+              <view>{{item.title}}</view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+      <!-- 第七层 -->
+      <view class="floor-seven" id="NAV6">
+        <navigator url="/pages/ProList/ProList" >
+          <image mode="widthFix"
+            src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/categroy/15767239832026803.jpg"></image>
+        </navigator>
+        <view class="rigth-name">高端定制</view>
+        <view class="right-content">
+          <view class="right-pro" wx:for="{{floor7}}" wx:key="index">
+            <navigator url="/pages/ProList/ProList" >
+              <image mode="widthFix" src="{{item.url}}"></image>
+              <view>{{item.title}}</view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+      <!-- 第八层 -->
+      <view class="floor-eight" id="NAV7">
+        <navigator url="/pages/ProList/ProList" >
+          <image mode="widthFix" src="cloud://racingblood.7261-racingblood-1302923269/Roseonly/categroy/未标题-1.png">
+          </image>
+        </navigator>
+        <view class="rigth-name">全部商品</view>
+        <view class="right-content">
+          <view class="right-pro" wx:for="{{floor8}}" wx:key="index">
+            <navigator url="/pages/ProList/ProList" >
+              <image mode="widthFix" src="{{item.url}}"></image>
+              <view>{{item.title}}</view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
